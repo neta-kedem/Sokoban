@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Sokoban</title>
+    <meta charset="utf-8" />
+    <!-- importing bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="noselect" onload="init()" onkeyup="movePlayer(event)">
+
+    <h1>Sokoban</h1>
+    <div class="table"></div>
+
+    <div class="steps">steps: <span class="stepsCounter"></span></div>
+
+    <select onchange="init(this.value);" onkeydown="ignoreAlpha(event)" class="btn btn-default dropdown-toggle">
+        <option value="1" selected="selected">level 1</option>
+        <option value="2">level 2</option>
+    </select>
+
+    <script src="app.js"></script>
+</body>
+
+
+</html>
